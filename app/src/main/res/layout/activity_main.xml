@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ff5252"
+    tools:context=".MainActivity"
+  >
+    <TextView
+        android:id="@+id/ticket_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx-xxx-xxx-xxx"
+        android:textSize="18sp"
+        android:textColor="#dcd2d2"
+        />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Tickeet"
+        android:textSize="18sp"
+        android:textColor="#dcd2d2"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/mobile_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile NO."
+        android:textSize="18sp"
+        android:textColor="#dcd2d2"
+        android:layout_below="@id/cancel"
+        />
+    <EditText
+        android:id="@+id/mobile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:saveEnabled="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/mobile_num"
+        android:text="+966 56 716 1718"
+        android:textColor="#eac1c1" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email."
+        android:textColor="#dcd2d2"
+        android:textSize="18sp"
+        android:layout_below="@id/mobile_edit"
+        />
+    <EditText
+        android:id="@+id/email_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#eac1c1"
+        android:text="eman@eman.eman"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/email"
+        android:saveEnabled="true"
+        />
+
+    <TextView
+        android:id="@+id/paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Paid"
+        android:textColor="#dcd2d2"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/email_edit"/>
+
+    <TextView
+        android:id="@+id/paid_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAR 75"
+        android:textColor="#dcd2d2"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/email_edit"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR-Code"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#dcd2d2"
+        android:layout_below="@id/paid_date"/>
+    <TextView
+        android:id="@+id/use_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="use your came to confirm tickets"
+        android:textColor="#dcd2d2"
+        android:layout_below="@id/qr_code"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fi"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/paid_date"/>
+    <TextView
+        android:id="@+id/cofirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm by Tickets NO."
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#dcd2d2"
+        android:layout_below="@id/use_camera"/>
+
+    <TextView
+        android:id="@+id/cofirm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="use your came to confirm tickets"
+        android:textColor="#dcd2d2"
+        android:layout_below="@id/cofirm"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/se"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/use_camera"/>
+
+
+
+</RelativeLayout>
